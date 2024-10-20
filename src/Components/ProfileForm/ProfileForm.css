@@ -1,0 +1,21 @@
+.form-actions{
+    margin-top: 10px;
+  }
+
+ .reset-button, .submit-button{
+    padding: 10px 15px;
+    margin: 5px;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+  }
+  
+.submit-button {
+    background-color: #17a2b8; /* Bootstrap info color */
+    color: white;
+  }
+
+ .reset-button {
+    background-color: #6c757d; /* Bootstrap default color */
+    color: white;
+  }

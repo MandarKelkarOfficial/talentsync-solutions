@@ -1,0 +1,277 @@
+.profile-container {
+    display: flex;
+    flex-direction: column;
+    padding: 20px;
+    background-color: #f4f5f7; /* Background color */
+  }
+  
+  .profile-wrapper {
+    display: flex;
+    justify-content: space-between;
+    margin-top: -70px;
+    z-index: 0; /* Sets z-index to zero */
+    position: relative; /* Required for z-index to work */
+  }
+  
+  
+  .profile-card {
+    flex: 1;
+    background: white;
+    box-shadow: 0 2px 10px rgba(0, 0, 0, 0.1);
+    border-radius: 8px;
+    padding: 20px;
+    margin-right: 20px;
+    margin-left: 20px;
+
+  }
+  .profile-c {
+    flex: 1;
+    background: white;
+    box-shadow: 0 2px 10px rgba(0, 0, 0, 0.1);
+    border-radius: 8px;
+    padding: 20px;
+    margin: 20px;
+
+
+  }
+  
+  .profile-header {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    position: relative;
+  }
+  
+  .profile-image {
+    width: 200px; /* Increase this value to make the image larger */
+    height: 200px; /* Keep the same value as width for a square image or adjust as needed */
+    border-radius: 50%; /* Makes the image round */
+    position: absolute; /* Positions the image above the div */
+    top: -75px; /* Adjust this value to position it higher */
+    left: 50%;
+    transform: translateX(-50%); /* Centers the image horizontally */
+    transition: transform 0.3s ease;
+  }
+  .profile-image:hover {
+    transform: translate(-50%, -10px); /* Move the image up on hover */
+  }
+  
+  .profile-buttons {
+    margin-top: 10px;
+  }
+  
+  .form-actions{
+    margin-top: 10px;
+  }
+  .connect-button, .message-button, .reset-button, .submit-button{
+    padding: 10px 15px;
+    margin: 5px;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+  }
+  
+  .connect-button,.submit-button {
+    background-color: #17a2b8; /* Bootstrap info color */
+    color: white;
+  }
+  
+  .message-button, .reset-button {
+    background-color: #6c757d; /* Bootstrap default color */
+    color: white;
+  }
+
+  .stat {
+    text-align: center;
+    padding: 0 15px; /* Adds 15px padding on the left and right sides */
+  }
+  
+  .profile-details {
+    text-align: center;
+    margin-top: 20px;
+  }
+  
+  .profile-name {
+    font-size: 24px;
+    font-weight: bold;
+  }
+  
+  .profile-location,
+  .profile-job,
+  .profile-education {
+    font-size: 14px;
+    color: gray;
+  }
+  
+  .profile-bio {
+    margin-top: 10px;
+    line-height: 1.5;
+    color: gray /* Faint black color */
+  }
+  
+  
+  .show-more {
+    color: #007bff; /* Bootstrap primary color */
+    cursor: pointer;
+  }
+  
+  .profile-stats {
+    display: flex;
+    justify-content: space-around;
+    margin-top: 20px;
+  }
+  
+  .stat {
+    text-align: center;
+  }
+  
+  .stat-heading {
+    font-size: 20px;
+    font-weight: bold;
+  }
+  
+  .stat-description {
+    font-size: 12px;
+    color: gray;
+  }
+
+
+
+
+
+
+
+
+
+  /* Profile.css */
+/* Add the following styles for the form */
+
+/* Container for the entire account info section */
+.account-info {
+  background: white;
+  padding: 20px;
+  box-shadow: 0 2px 10px rgba(0, 0, 0, 0.1); /* Slight shadow for the card */
+  border-radius: 8px;
+  margin-top: 2px; /* Space between profile section and form */
+  margin-right: 28px;
+
+}
+
+/* Section title */
+.account-info h6 {
+  font-size: 16px;
+  color: #050505;
+  font-weight: bold;
+  margin-bottom: 20px;
+  text-transform: uppercase; /* Make the title uppercase */
+  letter-spacing: 1px; /* Add spacing between letters */
+}
+
+
+
+/* Form row for multiple inputs in a single row */
+.form-row {
+  display: flex;
+  justify-content: space-between;
+  gap: 20px; /* Gap between columns */
+  margin-bottom: 20px; /* Space between rows */
+}
+
+.form-group {
+  flex: 1;
+  display: flex;
+  flex-direction: column;
+}
+
+/* Label styling */
+.form-group label {
+  font-weight: bold;
+  margin-bottom: 8px;
+  font-size: 14px;
+  color: #152030; /* Light gray color for the label */
+}
+
+/* Input fields */
+/* Updated input and textarea styling */
+.form-group input,
+.form-group textarea,
+.form-group select {
+  padding: 12px; /* Slightly more padding for a similar size as the image */
+  border: 0px solid #ccc; /* Base border color */
+  border-radius: 4px; /* Rounded corners similar to the image */
+  font-size: 14px;
+  color: #333;
+  background-color: #f7f7f7; /* Slightly off-white background for inputs */
+  /* box-shadow: 0 0 5px rgba(48, 47, 47, 0.3); Black shadow around the border */
+  transition: box-shadow 0.3s ease, border-color 0.3s ease; /* Smooth transition on hover/focus */
+}
+
+
+/* Input focus style - stronger border and shadow */
+.form-group input:focus,
+.form-group textarea:focus {
+  border-color: #000; /* Black border on focus */
+  box-shadow: 0 0 8px rgba(0, 0, 0, 0.5); /* Darker and larger shadow on focus */
+  outline: none; /* Remove default focus outline */
+}
+
+/* Ensure the form fields take up the correct width, as in the image */
+.form-group input,
+.form-group textarea {
+  width: 100%;
+  box-sizing: border-box; /* Ensure padding and border are included in total width */
+}
+
+/* Textarea resizing */
+textarea {
+  resize: none;
+  height: 80px;
+}
+
+/* Styling for City, Country, and Postal code */
+.form-row .form-group:last-child {
+  margin-right: 0;
+}
+
+/* Styling for inputs inside the form row */
+.form-row .form-group input {
+  width: 100%;
+  box-sizing: border-box;
+}
+
+/* Responsive design: stack the form fields vertically on small screens */
+@media (max-width: 768px) {
+  .form-row {
+    flex-direction: column;
+  }
+}
+
+/* Optional: subtle line separator between sections */
+.separator {
+  width: 100%;
+  height: 1px;
+  background-color: #e0e0e0;
+  margin: 20px 0;
+}
+
+
+
+.centerbtn{
+  display:flex;
+  justify-content: center;
+  align-items: center;
+  width: 100%;
+}
+
+.b{
+  width: 70%;
+  margin: 2% 2% 2% 10%;
+}
+
+.c{
+  width: 70%;
+  margin: 2% 10% 2% 2%;
+}
+
+
+

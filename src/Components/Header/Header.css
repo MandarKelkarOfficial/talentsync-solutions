@@ -1,0 +1,98 @@
+/* Header.css */
+.header-container {
+    background-image: url('../Assets/profile-bg.png'); /* Ensure the image is in the public folder */
+    background-size: cover; /* Ensures the image covers the full container */
+    background-position: center; /* Centers the image */
+    background-repeat: no-repeat; /* Prevents repeating */
+    height: 100vh; /* Full height of the viewport */
+    width: 96vw; /* Full width of the viewport */
+    position: relative; /* Needed for overlay to take position */
+  }
+  
+  .overlay {
+    position: absolute; /* Overlay covers the full background */
+    top: -90px; /* Move overlay up by 20 pixels */
+    left: 0;
+    right: 0;
+    bottom: 0;
+    background: linear-gradient(to right, rgba(11, 23, 72, 0.8), rgba(0, 0, 50, 0.8)); /* Gradient from dark blue to darker blue */
+    display: flex;
+    flex-direction: column; /* Stack the h1, p, and button vertically */
+    justify-content: center; /* Center content vertically */
+    align-items: flex-start; /* Align content to the left */
+    padding-left: 50px; /* Space from the left */
+  }
+  
+  h1, p {
+    color: white; /* Text color white */
+  }
+  
+  h1 {
+    font-size: 3em; /* Large font size */
+    margin: 0;
+    text-align: left; /* Align text to the left */
+  }
+  
+  p {
+    font-size: 1.2em; /* Adjust font size */
+    margin: 20px 0;
+    text-align: left; /* Align text to the left */
+  }
+  
+  .edit-profile-btn {
+    background-color: #00bfff;
+    color: white;
+    border: none;
+    padding: 10px 20px;
+    cursor: pointer;
+    border-radius: 5px;
+    margin-top: 20px;
+    font-size: 1.2em; /* Larger button text */
+    text-align: left; /* Align button to the left */
+    transition: transform 0.3s ease; /* Smooth animation for the hover effect */
+  }
+  
+  .edit-profile-btn:hover {
+    transform: translateY(-5px); /* Move button slightly upwards on hover */
+  }
+  
+  /* Media Queries for Responsiveness */
+  @media (max-width: 768px) {
+    .overlay {
+      padding-left: 20px; /* Less padding on smaller screens */
+    }
+  
+    h1 {
+      font-size: 2.5em; /* Smaller font size for heading */
+    }
+  
+    p {
+      font-size: 1.1em; /* Smaller font size for paragraph */
+    }
+  
+    .edit-profile-btn {
+      font-size: 1em; /* Smaller button text */
+      padding: 8px 16px; /* Less padding */
+    }
+  }
+  
+  @media (max-width: 480px) {
+    .overlay {
+      padding-left: 10px; /* Even less padding on mobile devices */
+    }
+  
+    h1 {
+      font-size: 2em; /* Smaller font size for heading */
+    }
+  
+    p {
+      font-size: 1em; /* Smaller font size for paragraph */
+    }
+  
+    .edit-profile-btn {
+      width: 100%; /* Full width button */
+      font-size: 1em; /* Same font size for button */
+      padding: 10px; /* Adjust padding */
+    }
+  }
+  

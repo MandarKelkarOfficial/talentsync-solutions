@@ -1,0 +1,29 @@
+/* FullscreenImage.css */
+.fullscreen-modal {
+    display: flex;
+    position: fixed;
+    z-index: 1000; /* On top of everything */
+    left: 0;
+    top: 0;
+    width: 100%;
+    height: 100%;
+    background-color: rgba(0, 0, 0, 0.8); /* Black background with opacity */
+    justify-content: center; /* Center the image horizontally */
+    align-items: center; /* Center the image vertically */
+  }
+  
+  .fullscreen-image {
+    max-width: 90%; /* Responsive image */
+    max-height: 90%; /* Responsive image */
+  }
+  
+  .close {
+    position: absolute;
+    top: 20px;
+    right: 30px;
+    color: white;
+    font-size: 40px;
+    font-weight: bold;
+    cursor: pointer;
+  }
+  
